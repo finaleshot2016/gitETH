@@ -182,9 +182,9 @@ export const EtherContextProvider = ({ children }) => {
   const calculateWallet = useCallback(async () => {
     const balance = await getAccountBalance(user);
     const claimed = await getClaimed(user);
-    const claimedInUSD = (claimed * dashboardData.avaxPrice).toFixed(3);
+    const claimedInUSD = (claimed * dashboardData.avaxPrice).toFixed(5);
     const dividend = await getDividend(user);
-    const dividendInUSD = (dividend * dashboardData.avaxPrice).toFixed(3);
+    const dividendInUSD = (dividend * dashboardData.avaxPrice).toFixed(5);
     const balanceInUSD = (balance * dashboardData.price).toFixed(3);
     const AVAXbalance = await getAVAXBalance(user);
     const AVAXbalanceInUSD = (AVAXbalance * dashboardData.avaxPrice).toFixed(3);
