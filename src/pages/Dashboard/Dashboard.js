@@ -29,7 +29,7 @@ const Dashboard = () => {
     { icon: Price, title: 'TOKEN HOLDINGS', label: walletData.balance + " TOKEN" , value: "$" + walletData.balanceInUSD},
     { icon: Price, title: 'ACCOUNT DIVIDEND', label: walletData.dividend + " ETH" , value: walletData.dividendInUSD},
     // { icon: Holders, title: 'Holders', value: 0.0 },
-    { icon: Price, title: 'TOKEN DIVIDEND CLAIMED', label: walletData.claimed + " TOKEN" , value: walletData.claimedInUSD},
+    { icon: Price, title: 'TOKEN DIVIDEND CLAIMED', label: walletData.claimed + " ETH" , value: walletData.claimedInUSD},
   ];
 
 
