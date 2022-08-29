@@ -22,14 +22,14 @@ const Dashboard = () => {
     { icon: Price, title: 'ETH PRICE', value: "$" + dashboardData.avaxPrice },
   ];
   const row11 = [
-    { icon: Price, title: 'TOTAL DIVIDENDS DISTRIBUTED', label: dashboardData.distributed + " ETH" ,value: "$" + dashboardData.distributedUSD },
+    { icon: Price, title: 'TOTAL DOG BOWL DISTRIBUTED', label: dashboardData.distributed + " ETH" ,value: "$" + dashboardData.distributedUSD },
   ];
 
   const row2 = [
     { icon: Price, title: 'TOKEN HOLDINGS', label: walletData.balance + " TOKEN" , value: "$" + walletData.balanceInUSD},
-    { icon: Price, title: 'ACCOUNT DIVIDEND', label: walletData.dividend + " ETH" , value: "$" + walletData.dividendInUSD},
+    { icon: Price, title: 'ACCOUNT DOG BOWL', label: walletData.dividend + " ETH" , value: "$" + walletData.dividendInUSD},
     // { icon: Holders, title: 'Holders', value: 0.0 },
-    { icon: Price, title: 'ETH DIVIDEND CLAIMED', label: walletData.claimed + " ETH" , value: "$" + walletData.claimedInUSD},
+    { icon: Price, title: 'DOG BOWL CLAIMED', label: walletData.claimed + " ETH" , value: "$" + walletData.claimedInUSD},
   ];
 
 
