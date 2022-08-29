@@ -182,9 +182,9 @@ export const EtherContextProvider = ({ children }) => {
   const calculateWallet = useCallback(async () => {
     const balance = await getAccountBalance(user);
     const claimed = await getClaimed(user);
-    const claimedInUSD = (claimed * dashboardData.price).toFixed(5);
+    const claimedInUSD = (claimed * dashboardData.avaxPrice).toFixed(3);
     const dividend = await getDividend(user);
-    const dividendInUSD = (dividend * dashboardData.price).toFixed(5);
+    const dividendInUSD = (dividend * dashboardData.avaxPrice).toFixed(3);
     const balanceInUSD = (balance * dashboardData.price).toFixed(3);
     const AVAXbalance = await getAVAXBalance(user);
     const AVAXbalanceInUSD = (AVAXbalance * dashboardData.avaxPrice).toFixed(3);
@@ -192,7 +192,7 @@ export const EtherContextProvider = ({ children }) => {
     setWalletData((prevData) => ({
       balance, balanceInUSD, AVAXbalance, dividend, AVAXbalanceInUSD, dividendInUSD, claimed, claimedInUSD
     }));
-  }, [getAccountBalance, dashboardData.price, user, getAVAXBalance, getDividend, dashboardData.avaxPrice, getClaimed]);
+  }, [getAccountBalance, dashboardData.price, dashboardData.avaxPrice, user, getAVAXBalance, getDividend, dashboardData.avaxPrice, getClaimed]);
 
   useEffect(() => {
     if (user) {
