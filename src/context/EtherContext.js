@@ -19,10 +19,6 @@ const defaultDashboardData = {
   firepitPercentage: 0,
   distributed: 0,
   distributedUSD: 0,
-  claimed: 0,
-  claimedInUSD: 0,
-  dividend: 0,
-  dividendInUSD: 0,
 };
 
 const defaultWalletData = {
@@ -32,6 +28,8 @@ const defaultWalletData = {
   AVAXbalanceInUSD: 0,
   dividend: 0,
   dividendInUSD: 0,
+  claimed: 0,
+  claimedInUSD: 0,
 };
 
 export const EtherContextProvider = ({ children }) => {
