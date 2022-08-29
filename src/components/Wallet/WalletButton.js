@@ -9,7 +9,7 @@ const WalletButton = () => {
 
   return (
     <Button className={classes.btn} onClick={connectWallet}>
-      Connect Wallet
+      Connect Your Wallet
     </Button>
   );
 };
