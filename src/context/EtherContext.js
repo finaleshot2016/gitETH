@@ -41,10 +41,10 @@ export const EtherContextProvider = ({ children }) => {
   });
 
   const avaxProvider = useMemo(() => new ethers.providers.getDefaultProvider('https://mainnet.infura.io/v3/612bc69b6c6d4bed9563cc131c039427'), []);
-  const otoContract = useMemo(() => new ethers.Contract('0x843f8A97f078F465539A0Ee32341e9312eD31429', otoAbi, avaxProvider), [avaxProvider]);
-  const oto1Contract = useMemo(() => new ethers.Contract('0xB7c95518143B64A6DA9eD07Aeb16f656fc86b53f', oto1Abi, avaxProvider), [avaxProvider]);
+  const otoContract = useMemo(() => new ethers.Contract('0x8654dA8a6F678f2FFb1c99f53B8eB155bF5ED9d2', otoAbi, avaxProvider), [avaxProvider]);
+  const oto1Contract = useMemo(() => new ethers.Contract('0xBd007F0A2eBB35535bf4C2077f53c4198d9D145e', oto1Abi, avaxProvider), [avaxProvider]);
   const wavaxContract = useMemo(() => new ethers.Contract('0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', wavaxAbi, avaxProvider), [avaxProvider]);
-  const lpPair = '0xF28fFC5292Da1eB198D5a89d436015D20937B51F';
+  const lpPair = '0xE0F908154395f0ba4a80D85F0c41fB6909e4ec8F';
   const tokenDecimal = 9;
 
   const location = useLocation();
