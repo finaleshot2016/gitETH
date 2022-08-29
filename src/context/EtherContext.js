@@ -192,7 +192,7 @@ export const EtherContextProvider = ({ children }) => {
     setWalletData((prevData) => ({
       balance, balanceInUSD, AVAXbalance, dividend, AVAXbalanceInUSD, dividendInUSD, claimed, claimedInUSD
     }));
-  }, [getAccountBalance, dashboardData.price, dashboardData.avaxPrice, user, getAVAXBalance, getDividend, dashboardData.avaxPrice, getClaimed]);
+  }, [getAccountBalance, dashboardData.price, dashboardData.avaxPrice, user, getAVAXBalance, getDividend, getClaimed]);
 
   useEffect(() => {
     if (user) {
